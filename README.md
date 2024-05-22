@@ -108,7 +108,7 @@ Your journey will take you through the wildness of the American Midwest and acro
    > The drovers variable has a value of an array of objects
 
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Drover has a value of a string and drovers has a value of an array of objects
+   > Drover has a value of an object and the drovers contains an array of objects 
 
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
    > https://www.loom.com/share/51fe98968e2f4cb197f91a8dcadb9d59
@@ -122,10 +122,10 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > I am using a for loop and initializing it by declaring a variable forestNumber and assigning a value of zero, next I am setting my condition of the loop by forestNumber is less than areas.forest which loop until the condition of areas.forrest is false and lastly forestNumber++ increments by one for each iteration. lastly the next line in the body of the loop, your are taking each iteration and pushing it to the journey empty array and passing through the string "forest" into the empty array for each iteration.
+   > I am using a for loop and initializing it by declaring a variable forestNumber and assigning a value of zero, next I am setting my condition of the for loop, forestNumber is less than(<) areas.forest,  and lastly forestNumber++ increments by one. The next line in the body of the for loop, your are taking each increment of the for loop and using the .push() method that passes the string "forest"  into the journey array.
 
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > The database variable is an object as it uses curly braces, it also contains two objects, the cattleTypes array of objects and the drovers array of objects.
+   > The database variable is an object as it uses curly braces, it also contains two array objects, the cattleTypes array of objects and the drovers array of objects.
 
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
    > (herdisize) is the parameter of that function that accepts a value and it gets its value when the function is invoked with an argument that is passed through. In this case (hersize) gets a value of 50 as the argument of cattleToDrive is assigned a value of 50 and becomes the argument when it is passed through the hireDrovers(cattleToDrive) function. 
